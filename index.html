@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-content">
+        <div class="logo">
+          <i class="bx bxl-discord-alt"></i>
+          <h1 class="logo-title text">Discord</h1>
+        </div>
+        <i class="bx bx-menu" id="btn-toggle"></i>
+      </div>
+
+      <ul class="nav-menu">
+        <li>
+          <span class="nav-tooltip">Search</span>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-tooltip"> Menu </span>
+            <i class="bx bxs-home"></i>
+            <span class="text nav-text"> Home </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav-tooltip"> Server List </span>
+            <i class="bx bxs-server"></i>
+            <span class="text nav-text">Server List</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav-tooltip"> Call </span>
+            <i class="bx bxs-phone-call"></i>
+            <span class="text nav-text"> Call </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav-tooltip"> Setting </span>
+            <i class="bx bxs-cog"></i
+            ><span class="text nav-text"> Setting </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">Content</div>
+
+    <script>
+      let btn = document.querySelector("#btn-toggle");
+      let sidebar = document.querySelector(".sidebar");
+
+      btn.addEventListener("click", function (e) {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+  </body>
+</html>
